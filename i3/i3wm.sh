@@ -71,6 +71,13 @@ echo $'\n'
 apt-get install -y lxappearance gtk-chtheme qt4-qtconfig
 
 echo $'\n'
+echo 'installiere Powerline Fonts'
+echo $'\n'
+git clone https://github.com/powerline/fonts.git
+cd $absolutepath/fonts
+(. ./install.sh)
+
+echo $'\n'
 echo 'Kopiere i3-config...'
 echo $'\n'
 mkdir ~/.config/i3/
