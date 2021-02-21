@@ -197,7 +197,7 @@ exec bash ~/.config/polybar/launch.sh --shades
 
 # Set inner/outer gaps 
 gaps inner 6
-gaps outer 1
+gaps outer 3
 
 for_window [class="^.*"] border pixel 0
 
