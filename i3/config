@@ -205,6 +205,11 @@ exec nitrogen --restore &
 
 exec compton &
 
+#run Chrimium with mod+shitft+x
 bindsym $mod+shift+x exec chromium
 
+#set wallpaper from images in the ~/.wallpaper folder
 exec sleep 3 && feh --bg-fill --randomize .wallpaper
+
+#start shutdown manager in floating mode
+for_window [class="Yad" instance="yad"] floating enable
